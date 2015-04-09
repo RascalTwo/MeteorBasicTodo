@@ -1,0 +1,21 @@
+<head>
+	<title>To-Do List</title>
+</head>
+
+<body>
+	<h1>To-Do</h1>
+	<div id='container'>
+		<form id='messageInput'>
+			<input type='text' name='message' placeholder='Enter New Task'/>
+		</form>
+		<ul>
+			{{#each task}}				<!-- For each object returned from the 'task' function -->
+				{{> taskTemplate}}		<!-- Insert a taskTemplate -->
+			{{/each}}
+		</ul>
+	</div>
+</body>
+
+<template name='taskTemplate'>
+	<li>{{text}}</li>					<!-- Put the 'text' from the data received from the 'task' function in a list object -->
+</template>

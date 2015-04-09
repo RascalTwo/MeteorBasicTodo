@@ -1,0 +1,46 @@
+body {
+	background-color: #315481;			/*Base background color*/
+	background-image: linear-gradient(to bottom, #315481, #918e82 100%);	/*Gradient color*/
+	background-attachment: fixed;		/*Background gradient stays at the same position*/
+
+	font-family: comic-sans;			/*I just had too...*/
+	font-size: 20px;
+}
+
+#container {
+	max-width: 600px;
+	margin: 0 auto;
+	min-height: 100%;
+}
+
+#messageInput {
+	text-align: center;
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+
+h1 {
+	font-size: 30px;
+	text-align: center;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	position: relative;
+	list-style: none;			/*Remove bullet points*/
+	padding: 15px;
+	font-weight:bold;
+	border-bottom: #ffffff solid 2px;	/*White divider line between list items*/
+}
+
+li:nth-child(odd) {				/*For every odd numbered list item, give it one color*/
+	background-color:#B0C4DE;
+}
+
+li:nth-child(even) {			/*and for every even numbered list item, give it another color*/
+	background-color:#87CEFA;
+}
